@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+svg {
+    margin-right: 10px;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    min-height:100vh;
+    max-width: auto;
+}
+main{
+    position:absolute;
+    display:flex;
+    align-items:flex-start;
+    background:transparent;
+    height:auto;
+    width:40rem;
+    border-radius: 30px;
+    box-shadow: 10px 20px 20px lightgrey;
+}
+aside{
+    height:25rem;
+    width:50%;
+    border-radius: 30px;
+}
+.left{
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    box-sizing: border-box;
+    padding:30px;
+}
+.circle{
+    position:relative;
+    height:9rem;
+    width:9rem;
+    border-radius: 50%;
+    background:linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)); 
+    text-align: center;
+    color: rgb(194, 202, 209);
+}
+.top{
+    font-size: 18px;
+    color: rgb(194, 202, 209);}
+.para{
+    text-align:center;
+    font-size: 18px;
+    color: rgb(194, 202, 209);
+    font-weight: 500;
+}
+h1{
+    font-size:30px;
+    margin-bottom:15px;
+    margin-top:-20px;
+    color:white;
+}
+h2{
+    font-size: 50px;
+    margin-top:30px;
+    margin-bottom:-10px;
+    color:white;
+}
+.right{
+    box-sizing: border-box;
+    padding:2rem;
+}
+.text{
+    font-weight: 800;
+    color:hsl(224, 30%, 27%);
+}
+.centre{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:15px;
+    height: 80%;
+    width: 100%;
+}
+.centre>*{
+    border-radius:10px;
+    height:40px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding:15px;
+}
+.reaction{
+    background: rgb(255, 246, 245);
+    color:hsl(0, 100%, 67%);
+}
+.memory{
+    background: rgb(255, 251, 242);
+    color:hsl(39, 100%, 56%);
+}
+.verbal{
+    background: rgb(242, 251, 250);
+    color:hsl(166, 100%, 37%);
+}
+.visual{
+    background: rgb(243, 243, 253);
+    color:hsl(234, 85%, 45%);
+}
+.button{
+    background-color:rgb(48, 59, 89);
+    color:white;
+    font-weight: 800;
+    border-radius:20px;
+    margin-top: auto; 
+    text-align: center;
+    vertical-align: middle;
+    line-height:40px;
+    transition: 2s background-color;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: hsl(241, 81%, 54%);
+}
+
+.score{
+    height:40px;
+    width:fit-content;
+    margin-left:auto;
+    vertical-align:middle;
+    text-align: center;
+    line-height:40px;
+    color:hsl(206, 8%, 60%);
+    font-weight: 700;
+}
+.points{
+    color:hsl(224, 30%, 27%);
+}
+@media screen and (max-width:375px){
+    *{
+        margin:0;
+    }
+    body{
+        min-height:100vh;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width:375px;
+    }
+    aside{
+        min-width:375px;
+        max-height:50%;
+    }
+    .left{
+        border-radius: 0pxs 0px 30px 30px;
+        padding:5px;
+    }
+}
